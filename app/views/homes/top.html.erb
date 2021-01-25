@@ -1,19 +1,14 @@
-<body>
- <div class= "container">
+<div class= "container">
    <div class= "row">
-      <div class= "mx-auto ">
-      <h1>Weicome to<i class="fas fa-book">Bookers</i> </h1>
-      <p>you can share and exchange your opinions , inpressions , and emotions
-        about various books!</p>
-         </div>
-    </div>
+       <div class= "mx-auto ">
+           <h1>Welcome to<i class="fas fa-book">Bookers!!</i> </h1>
+          <p>you can share and exchange your opinions , inpressions , and emotions
+           about various books!</p>
         <div class= "button-wrapper">
-         <div class= "row">
-             <div class= "mx-auto ">
-          <%= link_to "Log in", new_user_session_path, class: "btn btn-success btn-block"  %>
-          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-block" %>
-     </div>
-     </div>
+            <div class= "row">
+                    <%= link_to "Log in", new_user_session_path, class: "btn btn-info btn-block"  %>
+                    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-block" %>
+        </div>
+    </div>
    </div>
  </div>
-</body>

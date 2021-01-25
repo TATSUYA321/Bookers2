@@ -1,7 +1,7 @@
 <div class= "container">
   <div class ="row">
     <div class= "col-md-3">
-      <%= render 'users/user_info', user: @user, book: @book %>
+      <%= render 'user_info', user: @user, book: @book %>
     </div>
     <div class= "col-md-8 offset-md-1">
       <h2>Users</h2>
@@ -17,7 +17,7 @@
       <tr>
       <% @users.each do |user| %>
       <td><%=link_to user_path(user.id) do %>
-      <%= attachment_image_tag user,:profile_image, :fill, 60, 60, fallback: "no_image.jpg" %>
+      <%= attachment_image_tag user,:profile_image, :fill, 40, 40, fallback: "no_image.jpg", :size => '40x40'%>
       <% end %></td>
       <td><%= user.name %></td>
       <td><%=link_to "Show", user_path(user.id) %></td>
